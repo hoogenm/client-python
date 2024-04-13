@@ -82,7 +82,7 @@ class Instances:
         if tags:
             payload['tags'] = tags
 
-        r = requests.post(self.url, headers=self.headers, params=payload)
+        r = requests.post(self.url, headers=self.headers, data=payload)
 
         return r.json()
 
